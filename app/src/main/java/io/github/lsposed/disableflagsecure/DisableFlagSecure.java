@@ -1,6 +1,6 @@
 //1 
 //package //io.github.lsposed.disableflagsecure;
-package io.github.lsposed.enforceflagsecure;
+package io.github.lsposed.disableflagsecure;
 
 import android.annotation.SuppressLint;
 import android.hardware.display.DisplayManager;
@@ -18,11 +18,11 @@ import io.github.libxposed.api.annotations.BeforeInvocation;
 import io.github.libxposed.api.annotations.XposedHooker;
 
 @SuppressLint({"PrivateApi", "BlockedPrivateApi"})
-public class EnforceFlagSecure extends XposedModule {
+public class DisableFlagSecure extends XposedModule {
     private static XposedModule module;
     private static Field captureSecureLayersField;
 
-    public EnforceFlagSecure(XposedInterface base, ModuleLoadedParam param) {
+    public DisableFlagSecure(XposedInterface base, ModuleLoadedParam param) {
         super(base, param);
         module = this;
     }
